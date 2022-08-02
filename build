@@ -18,6 +18,7 @@ x.container ()
 x.goinstall ()
 {
   go install ./cmd/openapi
+  cp $(command -v openapi) files/usr/share/workspace/.local/bin
 }
 
 # --------------------- completion and delegation --------------------
