@@ -2,9 +2,22 @@
 
 set -e
 
+GENVERS=6.0.1
+
+x.fetch.jar ()
+{
+  local url="https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/$GENVERS/openapi-generator-cli-$GENVERS.jar"
+  curl -LO "$url"
+}
+
 x.container ()
 {
-  docker build -t openai -t rwxrob/openai .
+  docker build -t openapi -t rwxrob/openapi .
+}
+
+x.goinstall ()
+{
+  go install ./cmd/openapi
 }
 
 # --------------------- completion and delegation --------------------

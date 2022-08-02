@@ -79,9 +79,9 @@ infer_user_info_from_home() {
 
   else
 
-    name=$(yq e .user.name "$conf")
-    shell=$(yq e .user.shell "$conf")
-    group=$(yq e .group.name "$conf")
+    name=$(yq .user.name "$conf")
+    shell=$(yq .user.shell "$conf")
+    group=$(yq .group.name "$conf")
 
   fi
 
