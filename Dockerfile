@@ -13,7 +13,6 @@ RUN apt-get install -y --no-install-recommends openjdk-18-jdk-headless \
     ssh rsync cifs-utils smbclient bash-completion less
 
 COPY ./files/. ./Dockerfile /
-COPY build /usr/share/workspace
 
 # prompts for user, group, ids, and shell
 ENTRYPOINT ["sh","/entry"] 

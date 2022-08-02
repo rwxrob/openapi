@@ -4,9 +4,10 @@ go 1.18
 
 require (
 	github.com/rwxrob/bonzai v0.14.1
+	github.com/rwxrob/compfile v0.1.12
 	github.com/rwxrob/fs v0.6.0
 	github.com/rwxrob/help v0.5.1
-	github.com/rwxrob/java v0.3.1
+	github.com/rwxrob/java v0.3.2
 )
 
 require (
